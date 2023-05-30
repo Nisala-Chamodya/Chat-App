@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="703.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.chatapp.controller.LoginFormController">
+   <children>
+      <ImageView fitHeight="696.0" fitWidth="885.0" layoutY="3.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/background.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="-1.0" opacity="0.9" prefHeight="704.0" prefWidth="885.0" style="-fx-background-color: black;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Login" textFill="#00ffab">
+               <font>
+                  <Font name="Berlin Sans FB Bold" size="57.0" />
+               </font>
+            </Label>
+            <JFXTextField focusColor="WHITE" layoutX="48.0" layoutY="136.0" prefHeight="50.0" prefWidth="754.0" promptText="User Name" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField focusColor="WHITE" layoutX="48.0" layoutY="241.0" prefHeight="50.0" prefWidth="754.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font name="Bauhaus 93" size="27.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="122.0" layoutY="417.0" prefHeight="64.0" prefWidth="606.0" style="-fx-background-color: #00ffab; -fx-background-radius: 50;" text="Login" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font name="Bauhaus 93" size="33.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="563.0" prefWidth="833.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.chatapp.controller.SplashFormController">
+   <children>
+      <ImageView fitHeight="488.0" fitWidth="918.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/splash.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="303.0" layoutY="539.0" text=" Delevoprd By ❤️ Blacky V1.0.0" textFill="#00ffab">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectContainer" arcHeight="5.0" arcWidth="5.0" fill="#e4e8eb" height="13.0" layoutX="10.0" layoutY="525.0" stroke="BLACK" strokeType="INSIDE" width="812.0" />
+      <Label fx:id="lblStatus" layoutX="329.0" layoutY="488.0" text="Label" textFill="#00ffab">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Rectangle fx:id="rectLoading" arcHeight="5.0" arcWidth="5.0" fill="#00ffab" height="13.0" layoutX="7.0" layoutY="525.0" stroke="#00ffca" strokeType="INSIDE" width="6.0" />
+      <AnchorPane layoutX="-4.0" opacity="0.74" prefHeight="563.0" prefWidth="841.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>
