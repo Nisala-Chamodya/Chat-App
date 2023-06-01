@@ -3,6 +3,7 @@ package lk.blacky.chatapp.utill;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import lk.blacky.chatapp.controller.LoginFormController;
 
 import java.io.IOException;
 
@@ -13,10 +14,16 @@ public class Navigation {
         Navigation.pane = pane;
         Navigation.pane.getChildren().clear();
         Stage window = (Stage) Navigation.pane.getScene().getWindow();
+
         switch (route) {
             case LOGIN:
                 window.setTitle("Login Form");
                 initUI("LoginForm.fxml");
+                break;
+            case CLIENT:
+
+                window.setTitle("Client Form");
+                initUI("ClientForm.fxml");
                 break;
 
 

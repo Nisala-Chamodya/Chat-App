@@ -10,7 +10,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane fx:id="pane" prefHeight="703.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.blacky.chatapp.controller.LoginFormController">
    <children>
       <ImageView fitHeight="696.0" fitWidth="885.0" layoutY="3.0" pickOnBounds="true">
@@ -25,7 +24,7 @@
                   <Font name="Berlin Sans FB Bold" size="57.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="WHITE" layoutX="48.0" layoutY="136.0" prefHeight="50.0" prefWidth="754.0" promptText="User Name" unFocusColor="WHITE">
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" layoutX="48.0" layoutY="136.0" prefHeight="50.0" prefWidth="754.0" promptText="User Name" unFocusColor="WHITE">
                <font>
                   <Font name="Bauhaus 93" size="27.0" />
                </font>
@@ -35,7 +34,7 @@
                   <Font name="Bauhaus 93" size="27.0" />
                </font>
             </JFXPasswordField>
-            <JFXButton layoutX="122.0" layoutY="417.0" prefHeight="64.0" prefWidth="606.0" style="-fx-background-color: #00ffab; -fx-background-radius: 50;" text="Login" textFill="WHITE">
+            <JFXButton layoutX="122.0" layoutY="417.0" onAction="#btnLoginOnAction" prefHeight="64.0" prefWidth="606.0" style="-fx-background-color: #00ffab; -fx-background-radius: 50;" text="Login" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
